@@ -2,12 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1.Given different samples are cold rolled to x % deformation; Sample A: 20 %, Sample B: 30 %, Sample C: 40 %, Sample D: 50 %. Which of the following is correct?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "% elongation of A < % elongation of B",
+        "b": "Yield Strength of C > Yield Strength of D",
+        "c": "Tensile Strength of D > Tensile Strength of A",
+        "d": "Elastic modulus of D > Elastic modulus of C"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2.Which of the following statements is incorrect w.r.t. strain hardening?",
+      "answers": {
+        "a": "It is related to the elastic deformation",
+        "b": "Dislocation multiplication",
+        "c": "Dislocations strain field interaction",
+        "d": "Motion of dislocation is hindered by the presence of other dislocations"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +36,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3.Which of the following decreases due to strain hardening?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Yield strength",
+        "b": "Hardness",
+        "c": "Ductility (% elongation or strain to failure)",
+        "d": "Ultimate tensile strength"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +50,57 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4.Consider an aluminum plate has been subjected to 20 % cold rolling. Rectangular Tensile specimens (thickness: 5 mm and width: 10 mm) were cut from the rolled plate and then subjected to tensile test. If the load at yield point is 1000 N, what would be the yield strength?",
+      "answers": {
+        "a": "500 MPa",
+        "b": "20 MPa",
+        "c": "10 MPa",
+        "d": "50 MPa"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5.The temperature below which cold working of metal is carried out is called:?",
+      "answers": {
+        "a": "Room temperature",
+        "b": "Melting temperature",
+        "c": "Below room temperature",
+        "d": "Recrystallization temperature"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6.Which of the following cannot be used for work hardening?",
+      "answers": {
+        "a": "Heating the specimen",
+        "b": "Cold rolling",
+        "c": "Hammering",
+        "d": "Cold forging"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
