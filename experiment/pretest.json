@@ -2,12 +2,45 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1.Which of the following does not improve due to strain hardening?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Hardness",
+        "b": "Ultimate tensile strength",
+        "c": "Young’s modulus",
+        "d": "Yield strength"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2.An aluminum plate has been rolled from 40 mm to 10 mm (thickness). Assume that width remains same. The % cold working (% CW) is:",
+      "answers": {
+        "a": "150%",
+        "b": "75%",
+        "c": "37.5%",
+        "d": "30%"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },{
+      "question": "3.Given different samples are cold rolled to x % deformation; Sample A: 20 %, Sample B: 30 %, Sample C: 40 %, Sample D: 50 %. Which of the following is correct?",
+      "answers": {
+        "a": "% elongation of C > % elongation of D ",
+        "b": "Yield Strength of C < Yield Strength of A",
+        "c": "Tensile Strength of A > Tensile Strength of D",
+        "d": "Elastic modulus of B < Elastic modulus of C"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -17,14 +50,13 @@
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
+    },{
+      "question": "4.Which of the following statements is correct w.r.t. strain hardening?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It decreases the dislocation density",
+        "b": "It is predominantly based on the addition of alloying elements",
+        "c": "Hardening occurs predominantly due to plastic deformation",
+        "d": "It is predominantly related to dislocation-solute interaction"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +65,22 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },{
+      "question": "5.Consider an aluminum plate has been subjected to 60 % cold rolling. Rectangular Tensile specimens (thickness: 2 mm and width: 5 mm) were cut from the rolled plate and then subjected to tensile test. If the maximum load noted is 750 N, what would be the ultimate tensile strength?",
+      "answers": {
+        "a": "750 MPa",
+        "b": "10 MPa",
+        "c": "150 MPa",
+        "d": "75 MPa"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
