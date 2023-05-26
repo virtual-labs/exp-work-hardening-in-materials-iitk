@@ -10,14 +10,14 @@
 
 <b> Fill here
 
-<b>Name of Developer | <b> Prof. Sudhansu S. Singh 
+<b>Name of Developer | <b> Prof. Sudhansu S. Singh , Prof. Shashank Shekhar
 :--|:--|
 <b> Institute | <b>IIT Kanpur
-<b> Email id|     <b>sudhanss@iitk.ac.in
+<b> Email id|     <b>sudhanss@iitk.ac.in , shashank@iitk.ac.in
 <b> Department | Materials Science & Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 |Mr. Abhineet | Student | CSE | REC Kannauj |
+1 |Mr. Abhineet | Student | CSE | REC Kannauj | 198.abhineet@gmail.com
