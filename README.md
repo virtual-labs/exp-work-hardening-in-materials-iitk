@@ -4,11 +4,13 @@
 <b>Discipline | <b> Mechanical Enginnering
 :--|:--|
 <b> Lab | <b> Mechanical Metallurgy Lab
-<b> Experiment|  <b> Fatigue Cyclic Load Test of Materials
+<b> Experiment|  <b> Strain and Work Hardening in Materials
 
 ### About the Experiment 
 
-<b> Fill here
+<b> Brief Description of the Equipment/Machine:</b></br>
+
+A rolling machine is needed to roll aluminum to different strain. Furthermore, a tensile testing machine is required to obtain tensile properties of rolled aluminum.
 
 <b>Name of Developer | <b> Prof. Sudhansu S. Singh , Prof. Shashank Shekhar
 :--|:--|
