@@ -1,13 +1,151 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 4</title>
+    <link rel="stylesheet" href="css/main.css" />
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+    <script>
+      var SAMPLE_ASSETS_PATH = "images/sample/";
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="menu">
+        <div class="nav-tabs">
+          <!-- <div class="nav-item active" data-target="#tools">Tools</div> -->
+          <div class="nav-item active" data-target="#instr">Instructions</div>
+        </div>
+
+        <div class="nav-content">
+          <div id="instr" class="nav-pane active">
+            <div id="accordion" class="accordion">
+              <div id="step1" class="box active">
+                <div class="label">Step 1: Select Sample</div>
+                <div class="content" style="display: flex; flex-wrap: wrap">
+                  <div class="p-1 pointer" onclick="loadSample('izod')" title="Click to select this sample.">
+                    <img src="images/sample.png" alt="" width="80" />
+                    <h6>Aluminium Sample</h6>
+                   
+                    <!-- <h6>Sample</h6> -->
+                  </div>
+
+                  <!-- <div class="p-1 pointer" onclick="loadSample('steel')" title="Click to select this sample.">
+                    <img src="images/sample1.png" alt="" width="60" />
+                    <h6>Mild Steel Sample</h6>
+                  </div> -->
+                </div>
+              </div>
+
+              <div id="step2" class="box disabled">
+                <div class="label">Step 2: Adjust machine and place the sample</div>
+                <div class="content">
+                  <ul>
+                    <li>Drag the sample into the machine.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="step3" class="box disabled">
+                <div class="label">Step 3: Start the test.</div>
+
+                <div class="content">
+                  <ul>
+                    <li>Click below buttons to start the machine.</li>
+                  </ul>
+                  <div class="mt-1">
+                    <button id="startTest">Start Rolling (Test 1)</button>
+                    <h4 id="startTextHeading" ></h4>
+                    <br>
+                    <button id="btnReset" disabled>Perform Test 2 (Tensile Test)</button>
+                    <!-- <button id="showGraphBtn" onclick="showGraph()" disabled>Plot</button> -->
+                  </div>
+                  <div class="btnResetSteps"> 
+                  <div id="step3.1" class="box active">
+                    <div class="label">Step 3.1: Take gauge length of the sample</div>
+                      <div class="mt-1">Length: <input id="step1Length" type="number" /> mm</div>
+                  </div>
+                  <div id="step3.2" class="box active">
+                    <div class="label">Step 3.2: Take the width of the sample</div>            
+                      <div class="mt-1">Width: <input id="step2Dia" type="number" /> mm</div>
+                  </div>
+                  <div id="step3.3" class="box active">
+                    <div class="label">Step 3.3: Take the Thickness of the sample</div>            
+                      <div class="mt-1">Thickness: <input id="step2Thickness" type="number" /> mm</div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              
+              <div id="step4" class="box disabled">
+                <div class="label">Step 4: Place sample on UTM machine.</div>
+                <div class="content">
+                  <ul>
+                    <li>Place the sample on the machine.</li>
+                    <li>You can adjust zoom level also.</li>
+                  </ul>
+                </div>
+              </div>
+              
+
+              <div id="step5" class="box disabled">
+                <div class="label">Step 5: Test for different rolling percentage.</div>
+                <div class="content">
+                  <ul>
+                    <li>Click below buttons to start the machine.</li>
+                  </ul>
+                  <div class="mt-1">
+                    <button id="startTest1">Start Test (As received Al) </button>
+                    <button id="startTest2" disabled> Start Test (20% rolled Al) </button>
+                    <button id="startTest3" disabled> Start Test (40% rolled Al) </button>
+                    <button id="startTest4" disabled> Start Test (60% rolled Al) </button>
+                  </div>
+                  <canvas id="outputGraphB"></canvas>
+
+                  <div class="mt-1 dataTable">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Strain</td>
+                          <td>Stress(MPa)</td>
+                        </tr>
+                      </thead>
+                      <tbody id="testData"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="step6" class="box disabled">
+                <div class="label">Step 6: Results</div>
+                <div class="content">
+                
+                </div>
+              </div>
+            
+              <div id="step7" class="box disabled">
+                <div class="label">Step 7: Activity</div>
+                <div class="content">Click next button to continue.</div>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn" id="btnNext" onclick="handle()">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider" id="slider"></div>
+      <div class="main">
+        <canvas class="dropzone" id="gui">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <script src="js/context.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  </body>
 </html>
